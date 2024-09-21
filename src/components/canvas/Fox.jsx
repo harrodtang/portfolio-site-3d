@@ -7,7 +7,7 @@ import CanvasLoader from '../Loader';
 const Fox = ({ isMobile }) => {
     const group = useRef();
     const { scene, animations } = useGLTF('./fox/fox.glb'); // Load the GLTF model
-    const { actions, mixer } = useAnimations(animations, group); // Access the animations
+    const { actions } = useAnimations(animations, group); // Access the animations
 
     useEffect(() => {
         // Play the walking animation
