@@ -25,6 +25,8 @@ import {
   threejs,
   github,
   linkedin,
+  doordash,
+  nielsen,
 } from "../assets";
 
 export const navLinks = [
@@ -137,55 +139,37 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Software Engineer",
+    company_name: "DoorDash",
+    icon: doordash,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: "Sep 2024 - Present",
+    points: [],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Software Engineer",
+    company_name: "Nielsen",
+    icon: nielsen,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jul 2022 - Sep 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Platform Tools DevOps Team",
+      "The Platform team provides services that power most of Nielsen's workloads. Each service operates at very high scale (PB's of data, millions of jobs, etc).",
+      "Developed multiple services from the ground up, taking them from 0 to 1. Most notably, leading the development of Platform's next-gen Platform as a Service (PaaS) application and building an internal generative AI chatbot that later became the company's ChatGPT replacement.",
+      "Automated builds + deployments and managed these services in the cloud with tools such as: CI/CD pipelines, Docker, Kubernetes, Helm, and AWS.",
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    company_name: "Nielsen",
+    icon: nielsen,
+    iconBg: "#E6DEDD",
+    date: "Jun 2021 - Aug 2021",
+    points: [
+      "Platform Tools DevOps Team",
+      "Developed and implemented an algorithm to determine optimal times to scale server resources. Estimated to save the team over $200,000 annually.",
+      "Developed an Apache Airflow plugin to allow users to self-restart their Airflow webservers running in Kubernetes.",
+      "Developed a React view to display the most accessed schemas and tables in the data lake.",
     ],
   },
 ];

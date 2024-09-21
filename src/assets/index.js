@@ -32,6 +32,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import harrod from "./harrod-headshot-2023.jpeg";
+import doordash from "./doordash.png";
+import nielsen from "./nielsen.png";
 
 export {
   logo,
@@ -64,4 +66,6 @@ export {
   tripguide,
   linkedin,
   harrod,
+  doordash,
+  nielsen,
 };
