@@ -19,7 +19,7 @@ const ExperienceCard = ({ experience }) => {
         background: "#1d1836",
         color: "#fff",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid  #ddf745" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -33,9 +33,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-[#80ed99] text-[24px] font-bold'>{experience.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='text-[#ddf745] text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
           {experience.company_name}
