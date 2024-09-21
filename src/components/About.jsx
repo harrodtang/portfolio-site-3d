@@ -8,33 +8,51 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { harrod } from "../assets";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full yellow-green-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
+import { Link } from "react-router-dom"; // If you're using React Router
 
-        <h3 className='text-black text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+const ServiceCard = ({ index, title, icon, url }) => {
+  // Function to check if the link is external or a PDF
+  const isExternalLink = (url) => url && (url.startsWith("http") || url.endsWith(".pdf"));
+
+  return (
+    <Tilt className='xs:w-[250px] w-full'>
+      <motion.div
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        className='w-full yellow-green-gradient p-[1px] rounded-[20px] shadow-card relative'
+      >
+        {/* For unimplemented links, show the Coming Soon message */}
+        {!url ? (
+          <div className="relative w-full h-full">
+            <div className="rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+              <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+              <h3 className="text-black text-[20px] font-bold text-center">{title}</h3>
+            </div>
+            <p className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-gray-500 text-lg font-bold">
+              Coming Soon
+            </p>
+          </div>
+        ) : isExternalLink(url) ? (
+          // Handle external links and PDF (resume) opening in a new tab
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          >
+            <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+            <h3 className="text-black text-[20px] font-bold text-center">{title}</h3>
+          </a>
+        ) : (
+          // Internal links handled by React Router
+          <Link to={url} className="block rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+            <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+            <h3 className="text-black text-[20px] font-bold text-center">{title}</h3>
+          </Link>
+        )}
+      </motion.div>
+    </Tilt>
+  );
+};
 
 const ProfileCard = ({ image }) => (
   <Tilt className='w-full h-full'>
@@ -83,9 +101,9 @@ const About = () => {
       </div>
 
       {/* Service Cards */}
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className="mt-20 flex flex-wrap gap-10">
         {links.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard key={service.title} index={index} title={service.title} icon={service.icon} url={service.source_code_link} />
         ))}
       </div>
     </>

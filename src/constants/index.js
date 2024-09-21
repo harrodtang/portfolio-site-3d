@@ -76,18 +76,22 @@ const links = [
   {
     title: "LinkedIn",
     icon: linkedin,
+    source_code_link: "https://www.linkedin.com/in/harrod-tang/",
   },
   {
     title: "Resume",
     icon: resume,
+    source_code_link: "/harrod-resume.pdf",
   },
   {
     title: "GitHub",
     icon: github,
+    source_code_link: "https://github.com/harrodtang",
   },
   {
-    title: "Coming Soon",
+    title: "Blog",
     icon: blog,
+    source_code_link: null,
   },
 ];
 
