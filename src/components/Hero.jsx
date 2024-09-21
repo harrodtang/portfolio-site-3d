@@ -26,11 +26,11 @@ const Hero = () => {
               1000,
               'I\'ve built and worked with services that operate at very high scale.',
               1000,
+              'I have extensive experience in platform engineering.',
+              1000,
               'I have extensive experience in full stack development.',
               1000,
               'I have extensive experience in cloud and devops engineering.',
-              1000,
-              'I have extensive experience in platform engineering.',
               1000,
             ]}
             speed={60}

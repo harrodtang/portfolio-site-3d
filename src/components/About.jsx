@@ -90,6 +90,9 @@ const About = () => {
           >
             I'm a software engineer with experience in building applications and services from the ground up, taking them from architecture through development. 
             I've also gained a lot of cloud and devops experience by deploying and managing these services at high scale over Kubernetes and AWS.
+            <br />
+            <br />
+            Really, I think of myself as a problem solver. I love using technology to curate concrete solutions for ambiguous problems.
             When I'm not coding, you'll find me out on the golf course or in the gym!
           </motion.p>
         </div>
