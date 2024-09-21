@@ -22,20 +22,19 @@ const Hero = () => {
           <TypeAnimation 
             className={`${styles.heroSubText} mt-2 text-white-100`}
             sequence={[
-              'I am a software engineer currently working at DoorDash.',
+              'I\'m currently a software engineer at DoorDash.',
               1000,
-              'Previously, I worked at Nielsen where I got to build services that operate at very high scale.',
+              'I\'ve built and worked with services that operate at very high scale.',
               1000,
-              'I have done a lot of full stack engineering.',
+              'I have extensive experience in full stack development.',
               1000,
-              'I have done a lot of cloud and devops engineering.',
+              'I have extensive experience in cloud and devops engineering.',
               1000,
-              'I have done a lot of platform engineering.',
+              'I have extensive experience in platform engineering.',
               1000,
             ]}
-            speed={50}
+            speed={60}
             repeat={Infinity}
-
           />
         </div>
       </div>
