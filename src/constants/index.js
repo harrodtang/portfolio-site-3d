@@ -27,6 +27,13 @@ import {
   linkedin,
   doordash,
   nielsen,
+  kubernetes,
+  python,
+  golang,
+  postgres,
+  java,
+  gitlab,
+  aws,
 } from "../assets";
 
 export const navLinks = [
@@ -84,56 +91,44 @@ const links = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Golang",
+    icon: golang,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "docker",
+    icon: docker,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Kubernetes",
+    icon: kubernetes,
+  },
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Postgres",
+    icon: postgres,
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "gitlab",
+    icon: gitlab,
   },
 ];
 

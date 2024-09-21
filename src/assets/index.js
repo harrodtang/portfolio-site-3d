@@ -34,6 +34,13 @@ import tripguide from "./tripguide.png";
 import harrod from "./harrod-headshot-2023.jpeg";
 import doordash from "./doordash.png";
 import nielsen from "./nielsen.png";
+import kubernetes from "./tech/kubernetes.png";
+import python from "./tech/python.png";
+import golang from "./tech/golang.png";
+import postgres from "./tech/postgres.png";
+import java from "./tech/java.png";
+import gitlab from "./tech/gitlab.png";
+import aws from "./tech/aws.png";
 
 export {
   logo,
@@ -68,4 +75,11 @@ export {
   harrod,
   doordash,
   nielsen,
+  kubernetes,
+  python,
+  golang,
+  postgres,
+  java,
+  gitlab,
+  aws,
 };
