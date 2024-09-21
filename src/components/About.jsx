@@ -12,7 +12,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className='w-full yellow-green-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
         options={{
@@ -40,7 +40,7 @@ const ProfileCard = ({ image }) => (
   <Tilt className='w-full h-full'>
     <motion.div
       variants={fadeIn("left", "spring", 0.5, 0.75)}
-      className='w-full h-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className='w-full h-full yellow-green-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div className='bg-tertiary rounded-[20px] w-full h-full flex justify-center items-center'>
         <img
