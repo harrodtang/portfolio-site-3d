@@ -42,6 +42,9 @@ import java from "./tech/java.png";
 import gitlab from "./tech/gitlab.png";
 import aws from "./tech/aws.png";
 
+import resume from "./resume.png";
+import blog from "./blog.png";
+
 export {
   logo,
   backend,
@@ -82,4 +85,6 @@ export {
   java,
   gitlab,
   aws,
+  resume,
+  blog,
 };

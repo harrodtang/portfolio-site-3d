@@ -34,6 +34,8 @@ import {
   java,
   gitlab,
   aws,
+  resume,
+  blog,
 } from "../assets";
 
 export const navLinks = [
@@ -77,15 +79,15 @@ const links = [
   },
   {
     title: "Resume",
-    icon: mobile,
+    icon: resume,
   },
   {
     title: "GitHub",
     icon: github,
   },
   {
-    title: "More To Come",
-    icon: creator,
+    title: "Coming Soon",
+    icon: blog,
   },
 ];
 
